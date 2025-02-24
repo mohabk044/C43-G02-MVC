@@ -33,18 +33,18 @@ namespace Project_Structure.Controllers
             //return $"Movie with id = {id}";
         }
 
-        [HttpGet]
-        public IActionResult Create()
-        {
-            ViewResult result = new ViewResult();
-            result.ViewName = "Create"; 
-            return View(result);
-        }
+        //[HttpGet]
+        //public IActionResult Create()
+        //{
+        //    ViewResult result = new ViewResult();
+        //    result.ViewName = "Create"; 
+        //    return View(result);
+        //}
 
-        [HttpPost]
-        public IActionResult Create(Movie movie)
-        {
+        //[HttpPost]
+        //public IActionResult Create(Movie movie)
+        //{
           
-        }
+        //}
     }
 }

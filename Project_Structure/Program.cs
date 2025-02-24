@@ -32,6 +32,9 @@ namespace Project_Structure
                 app.UseDeveloperExceptionPage();
             }
 
+            //Get Static Files --> css/js/images
+            app.UseStaticFiles();
+
             app.UseRouting();
 
         
