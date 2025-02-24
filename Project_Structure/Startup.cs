@@ -19,9 +19,9 @@ namespace Project_Structure
         {
             services.AddControllersWithViews();       //MVC
             //services.AddRazorPages();
-            //services.AddControllers();   //API
+            //services.AddControllers();   //API or MVC
             //services.AddMvc();         //MIX
-        }
+        }  
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -39,11 +39,22 @@ namespace Project_Structure
                 {
                     await context.Response.WriteAsync("Hello World!");
                 });
-
+                //Static
                 endpoints.MapGet("/index", async context =>
                 {
                     await context.Response.WriteAsync("Hello Route!");
                 });
+
+                ////Dynamic / Variable  
+                //endpoints.MapGet("/{id:int}", async context =>
+                //{
+                //    await context.Response.WriteAsync("Hello Route!");
+                //});
+                ////Mixed
+                //endpoints.MapGet("/Hello{id:alpha}", async context =>
+                //{
+                //    await context.Response.WriteAsync("Hello Route!");
+                //});
 
                 endpoints.MapControllerRoute(
                     name: "default",
