@@ -4,4 +4,11 @@
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\css\" />
+    <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\js\" />
+    <Folder Include="wwwroot\lip\" />
+  </ItemGroup>
+
 </Project>
