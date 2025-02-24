@@ -59,6 +59,7 @@ namespace Project_Structure
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Movies}/{action=Index}/{id:int?}"
+                //old way
                 //defaults: new { Action = "Index" },
                 //constraints: new { id = new IntRouteConstraint() }
                 );
